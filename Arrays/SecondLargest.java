@@ -16,3 +16,6 @@ class Solution {
     return slargest;
     }
 }
+
+
+// Harshad : what if the data given is negative : {-10, -9, -8, -7}
