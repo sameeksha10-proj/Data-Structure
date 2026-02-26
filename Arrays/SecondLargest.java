@@ -19,3 +19,10 @@ class Solution {
 
 
 // Harshad : what if the data given is negative : {-10, -9, -8, -7}
+Enter size for an array : 
+4
+-10
+-9
+-8
+-7
+Second large element is : -8
