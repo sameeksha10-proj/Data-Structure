@@ -6,12 +6,17 @@ class Solution {
     //take first string as reference
     String first=strs[0];
 
+    //Handle empty first string
+    if (first.length() == 0) 
+        return "";
+
+
     //go character by character 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<first.length();i++){
         char ch=first.charAt(i);
         //check for the first & other string characters 
         for(int j=1;j<n;j++){
-            if(i>=strs[i].length() || strs[j].charAt(i)!=ch){
+            if(strs[j].length()==0 || i>=strs[j].length() || strs[j].charAt(i)!=ch){
                 return first.substring(0,i);
             }
         }
